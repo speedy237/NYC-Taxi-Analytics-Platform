@@ -1,8 +1,4 @@
-C'est un excellent ajout. Intégrer les requêtes SQL **et** les résultats réels transforme le README d'une simple description technique en une **preuve de compétence**. Cela montre que le pipeline fonctionne, que la donnée est interrogable, et que vous avez découvert des insights réels (comme les outliers de dates ou l'impact de la pluie).
 
-Voici le fichier `README.md` **complet et mis à jour**. J'ai formaté les résultats sous forme de tableaux Markdown propres et traduit les insights en anglais professionnel pour maintenir la cohérence du portfolio.
-
----
 
 ```markdown
 # 🚕 NYC Taxi Analytics Platform — End-to-End Data Engineering Project
@@ -31,11 +27,24 @@ This project implements a **Lakehouse architecture**, which combines the best of
 * **Decoupled Storage & Compute:** Storage (S3/Local) is cheap; Compute (Spark/Trino) scales independently.
 * **Open Formats:** Data is stored in open Parquet files, not locked into a proprietary vendor format.
 
+
+## 🧰 Tech Stack
+
+| Category | Technology | Role |
+| :--- | :--- | :--- |
+| **Compute Engine** | **Apache Spark** | Distributed data processing and heavy ETL transformations. |
+| **Storage** | **MinIO** | S3-compatible object storage for the Data Lake. |
+| **Query Engine** | **Trino** | High-speed distributed SQL query engine for analytics. |
+| **Table Format** | **Apache Iceberg** | Open table format providing ACID transactions and schema evolution. |
+| **Orchestrator** | **Apache Airflow** | Workflow management and pipeline scheduling. |
+| **Reporting** | **Apache Superset** | Business Intelligence dashboards and data visualization. |
+
 ### Architectural Flow
 The pipeline follows the "Medallion" architecture (Bronze/Silver/Gold):
 
 
-1.  **Ingest:** Python scripts fetch raw data from NYC Open Data & Meteostat APIs.
+0. **Download:** Python scripts fetch raw data from NYC Open Data & Meteostat APIs.
+1.  **Ingest:** Pyspark scripts fetch from raw zone. 
 2.  **Process:** Apache Spark cleans and transforms data into Iceberg tables.
 3.  **Serve:** Trino provides a high-speed SQL query engine over the Iceberg tables.
 4.  **Visualize:** Apache Superset consumes Trino views for business intelligence.
