@@ -403,11 +403,4 @@ LIMIT 5;
 *Data Architect | Data Engineer | Data Scientist*
 *Computer Engineer | Chef de Projet Data*
 
-```
 
-***
-
-### Prochaine étape possible :
-Si tu as les screenshots des dashboards Superset qui correspondent à ces résultats, je peux t'aider à formater la section "Dashboards" pour inclure les images juste à côté de ces analyses SQL. Cela créerait un lien visuel très fort pour un recruteur.
-
-```
