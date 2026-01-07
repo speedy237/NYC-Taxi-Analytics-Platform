@@ -3,7 +3,7 @@
 ```markdown
 # 🚕 NYC Taxi Analytics Platform — End-to-End Data Engineering Project
 
-## 📌 Overview
+## . 📌 Overview
 This project is an **end-to-end data engineering analytics platform** built on NYC Taxi data, enriched with weather information. It moves beyond traditional warehousing by implementing a **Modern Data Lakehouse**.
 
 It demonstrates:
