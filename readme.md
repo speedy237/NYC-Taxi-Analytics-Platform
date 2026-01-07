@@ -26,7 +26,7 @@ This project implements a **Lakehouse architecture**, which combines the best of
 * **Open Formats:** Data is stored in open Parquet files, not locked into a proprietary vendor format.
 
 
-## 🧰 Tech Stack
+### 🧰 Tech Stack
 
 | Category | Technology | Role |
 | :--- | :--- | :--- |
