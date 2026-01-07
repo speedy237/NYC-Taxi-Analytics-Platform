@@ -1,6 +1,4 @@
 
-
-```markdown
 # 🚕 NYC Taxi Analytics Platform — End-to-End Data Engineering Project
 
 ## . 📌 Overview
@@ -15,7 +13,7 @@ It demonstrates:
 
 > **🎯 Goal:** Transform raw operational data into business-ready analytics for operations, finance, and strategy.
 
----
+
 
 ## 📖 The Lakehouse Concept & Architecture
 
