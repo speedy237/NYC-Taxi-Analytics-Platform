@@ -1,9 +1,7 @@
 
+# 🚕 NYC Taxi Analytics Platform 
 
-```markdown
-# 🚕 NYC Taxi Analytics Platform — End-to-End Data Engineering Project
-
-## 📌 Overview
+## . 📌 Overview
 This project is an **end-to-end data engineering analytics platform** built on NYC Taxi data, enriched with weather information. It moves beyond traditional warehousing by implementing a **Modern Data Lakehouse**.
 
 It demonstrates:
@@ -15,7 +13,7 @@ It demonstrates:
 
 > **🎯 Goal:** Transform raw operational data into business-ready analytics for operations, finance, and strategy.
 
----
+
 
 ## 📖 The Lakehouse Concept & Architecture
 
@@ -28,7 +26,7 @@ This project implements a **Lakehouse architecture**, which combines the best of
 * **Open Formats:** Data is stored in open Parquet files, not locked into a proprietary vendor format.
 
 
-## 🧰 Tech Stack
+### 🧰 Tech Stack
 
 | Category | Technology | Role |
 | :--- | :--- | :--- |
@@ -405,11 +403,4 @@ LIMIT 5;
 *Data Architect | Data Engineer | Data Scientist*
 *Computer Engineer | Chef de Projet Data*
 
-```
 
-***
-
-### Prochaine étape possible :
-Si tu as les screenshots des dashboards Superset qui correspondent à ces résultats, je peux t'aider à formater la section "Dashboards" pour inclure les images juste à côté de ces analyses SQL. Cela créerait un lien visuel très fort pour un recruteur.
-
-```
