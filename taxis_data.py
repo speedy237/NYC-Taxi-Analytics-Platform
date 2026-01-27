@@ -17,8 +17,22 @@ DATA_URLS = {
     "yellow_2024_10": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet",
     "yellow_2024_11": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet",
     "yellow_2024_12": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet",
-    "taxi_zones": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip",
-    "central_park_weather": "https://d37ci6vzurychx.cloudfront.net/misc/central_park_weather.csv"
+    "yellow_2025_01": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet",
+    "yellow_2025_02": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet",
+    "yellow_2025_03": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet",
+    "yellow_2025_04": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet",
+    "yellow_2025_05": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet",
+    "yellow_2025_06": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet",
+    "yellow_2025_07": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-07.parquet",
+    "yellow_2025_08": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-08.parquet",
+    "yellow_2025_09": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-09.parquet",
+    "yellow_2025_10": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-10.parquet",
+    "yellow_2025_11": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-11.parquet",
+    "yellow_2025_12": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-12.parquet",
+
+    
+    "taxi_zones": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip"
+    #"central_park_weather": "https://d37ci6vzurychx.cloudfront.net/misc/central_park_weather.csv"
 }
 
 def download_file(url, output_path):
@@ -36,7 +50,7 @@ def download_file(url, output_path):
 
 def main():
     # Créer la structure de dossiers
-    data_dir = Path("data/raw/Nyc_Taxi")
+    data_dir = Path("data/raw/Nyc_Taxi/taxi_trips")
     data_dir.mkdir(parents=True, exist_ok=True)
     
     # Télécharger les fichiers

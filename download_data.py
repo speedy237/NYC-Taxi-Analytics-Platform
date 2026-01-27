@@ -5,7 +5,7 @@ from datetime import datetime
 # 1. Configuration
 station_id = '72505' 
 start = datetime(2024, 1, 1)
-end = datetime(2024, 12, 31, 23, 59) # Ajout de l'heure de fin pour couvrir toute l'année
+end = datetime(2025, 12, 31, 23, 59) # Ajout de l'heure de fin pour couvrir toute l'année
 
 # 2. Récupérer les données
 data = hourly(station_id, start, end)
