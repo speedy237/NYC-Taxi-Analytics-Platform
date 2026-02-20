@@ -1,6 +1,7 @@
 import pandas as pd
 from meteostat import hourly
 from datetime import datetime
+from pathlib import Path
 
 # 1. Configuration
 station_id = '72505' 
@@ -20,7 +21,10 @@ available_columns = [col for col in target_columns if col in df.columns]
 df = df[available_columns]
 
 # 4. Sauvegarde
-df.to_csv('central_park_weather_2024.csv')
+data_dir = Path("data/raw/Nyc_Taxi/taxi_trips")
+data_dir.mkdir(parents=True, exist_ok=True)
+data_path = data_dir / 'central_park_weather_2024.csv'
+df.to_csv(data_path, index=False)
 
 print(f"Fichier créé avec les colonnes suivantes : {available_columns}")
 print(df.head())
